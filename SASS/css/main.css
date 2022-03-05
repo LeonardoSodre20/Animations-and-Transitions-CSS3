@@ -1,0 +1,26 @@
+body {
+  background-color: aquamarine;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.container {
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  color: white;
+}
+
+.container p {
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  color: green;
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  color: blue;
+}
+/*# sourceMappingURL=main.css.map */

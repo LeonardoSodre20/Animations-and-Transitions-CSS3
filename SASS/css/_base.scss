@@ -1,0 +1,44 @@
+$text-color: white;
+$weight: bold;
+$font-size-default: 0.9em;
+$shadow-box: black;
+
+@mixin box-shadow($color) {
+  box-shadow: 2px 2px 4px $color;
+}
+
+@mixin text-effetct($val) {
+  @if $val == danger {
+    color: green;
+  } @else if $val == alert {
+    color: pink;
+  } @else {
+    color: black;
+  }
+}
+
+body {
+  background-color: aquamarine;
+  color: $text-color;
+  font-weight: $weight;
+  font-size: $font-size-default;
+}
+
+.container {
+  @include box-shadow(rgba(0, 0, 0, 0.6));
+  $text-color2: white;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+
+  color: $text-color2;
+
+  p {
+    @include box-shadow(rgba(0, 0, 0, 0.6));
+    @include text-effetct(danger);
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    color: blue;
+  }
+}
