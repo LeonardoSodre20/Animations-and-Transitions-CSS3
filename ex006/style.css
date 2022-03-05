@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 20px;
+}
+
+.red {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  height: 100px;
+  width: 100px;
+}
+
+.animationContent::after {
+  content: "";
+  animation: promotion 2s linear infinite;
+}
+
+@keyframes promotion {
+  0% {
+    content: "Promoção";
+  }
+  50% {
+    content: "";
+  }
+  60% {
+    content: "Frete Grátis";
+  }
+}

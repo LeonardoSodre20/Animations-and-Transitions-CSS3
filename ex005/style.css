@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: black;
+}
+
+.item:hover{
+    animation-play-state: paused; 
+    cursor: pointer;   
+}
+
+.positionBox{
+    width: 100%;
+    height: 300px;
+    background-color: #444;
+    position: relative;
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50%;
+}
+
+.animationPosition{
+    position: absolute;
+    animation: position 4s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes position{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    35%{
+        top: 0;
+        left: calc(100% - 100px);
+    }
+    50%{
+        top: calc(100% - 100px);
+        left: calc(100% - 100px);
+    }
+    85%{
+        top: calc(100% - 100px);
+        left: 0;
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }
+}
