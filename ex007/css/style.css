@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container-principal{
+    width: 800px;
+    height: 400px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.tela-monitor{
+    background-color: darkgrey;
+    height: 350px;
+    width: 750px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+/* .shadow-monitor{
+    background-color: rgb(155, 155, 155);
+    height: 250px;
+    width: 100%;
+    transform: rotateZ(-35deg);
+} */
+
+.base-monitor{
+    height: 80px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 80%;
+}
+
+.sup-monitor{
+    width: 150px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+}
